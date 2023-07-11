@@ -9,7 +9,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
     builder.Configuration.GetConnectionString("DefaultConnection")
     ));
 
-//bulding a builder
+//bulding app 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
