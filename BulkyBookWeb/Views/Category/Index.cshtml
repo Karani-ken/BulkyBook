@@ -8,11 +8,11 @@
 
     <div class="row pt-4">
         <div class="col-6">
-            <h2 class="text-primary">Category List</h2>
+            <h2 class="text-primary">Todo List</h2>
         </div>
         <div class="col-6 text-end">
             <a asp-controller="Category" asp-action="Create" class="btn btn-primary">
-               <i class="bi bi-plus-circle"></i> &nbsp; Create New Category
+               <i class="bi bi-plus-circle"></i> &nbsp; Create New Todo
             </a>
         </div>
     </div>
@@ -25,10 +25,10 @@
     <thead>
         <tr>
             <th>
-                Category Name
+                Todo Name
             </th>
             <th>
-                Display Order
+               Description
             </th>
             <th></th>
         </tr>
@@ -41,7 +41,7 @@
                         @item.Name
                     </td>
                     <td width="30%">
-                        @item.DisplayOrder
+                        @item.Description
                     </td>
                     <td>
                         <div class="w-75 btn-group" role="group">

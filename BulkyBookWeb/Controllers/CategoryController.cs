@@ -28,7 +28,7 @@ namespace BulkyBookWeb.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Category category)
         {
-            if(category.Name == category.DisplayOrder.ToString())
+            if(category.Name == category.Description)
             {
                 ModelState.AddModelError("name", "The Display Order Cannot exactly match the Name.");
             }
@@ -64,7 +64,7 @@ namespace BulkyBookWeb.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(Category category)
         {
-            if (category.Name == category.DisplayOrder.ToString())
+            if (category.Name == category.Description)
             {
                 ModelState.AddModelError("name", "The Display Order Cannot exactly match the Name.");
             }
